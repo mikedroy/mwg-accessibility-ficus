@@ -1,0 +1,118 @@
+svg.downChevronIcon {
+    width: 10px;
+}
+
+svg.searchIcon {
+    width:10px;
+}
+
+.subNav__item {
+    color: rgb(111, 111, 111);
+    background-color: transparent;
+    transition: all 500ms;
+
+}
+
+.flyOutMenu .subNav__item {
+    color: rgb(111, 111, 111);
+    transition: all 100ms;
+}
+
+.desktopNav__navItem {
+    color: rgb(43, 47, 49);
+    border: 1px solid transparent;
+    transition: all 500ms;
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+    margin-right: 10px;
+}
+
+nav#wpjs-topNav {
+    margin-left: 370px;
+}
+
+.desktopNav__subMenu {
+    transition: height 500ms;
+    background-color: rgb(227, 227, 227);
+    bottom: 0px;
+    width: 200px;
+    padding-left:10px;
+    background:#FFF;
+    border:1px solid #3bc84c;
+    border-radius:5px;
+}
+
+.subNav__item {
+    position: relative;
+    list-style: none;
+    padding: 10px 0px;
+    cursor:pointer;
+}
+
+html body .subNav__item a {
+    color: #000 !important;
+}
+
+.subNav__item:hover .flyOutMenu {
+    display: block !important;
+    position: absolute;
+    left:200px;
+    top:0px;
+    width:200px;
+    background:rgb(227, 227, 227);
+}
+
+.desktopNav__navItem a {
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 500ms ease;
+    cursor: pointer;
+
+}
+
+.desktopNav__navItem:hover > a {
+    color:#3bc84c !important;
+}
+
+.desktopNav__navItem:hover {
+    border:1px solid #3bc84c;
+    border-radius:5px;
+}
+
+
+.desktopHeader__logo {
+    float: left;
+}
+
+.desktopNav__navItemHasSubMenu {
+    position: relative;
+}
+
+.desktopNav__navItemHasSubMenu > span {
+     display: none;
+ }
+
+.desktopNav__navItemHasSubMenu:hover > span {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 46px;
+}
+
+.searchWrap {
+    float: right;
+}
+
+.flyOutMenu ul {
+    padding-left: 10px;
+    background:#FFF;
+    border:1px solid #3bc84c;
+    border-radius:5px;
+}
+
+html body li.subNav__item:hover > a {
+    color: #3bc84c !important;
+}

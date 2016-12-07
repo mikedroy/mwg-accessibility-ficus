@@ -1,0 +1,65 @@
+/*blue: #2c44f6
+green: #3bc84c
+body text: #474a4a*/
+
+.container {
+	width: 95vw;
+	font-family: Helvetica;
+	max-height: 100vh;
+}
+
+.unitOne,
+.unitOne * {
+	box-sizing: border-box;
+	color: #474a4a;
+}
+
+.tocLink {
+	color: #2c44f6;
+	text-decoration: underline;
+}
+
+
+.unitOne {
+	padding: 10px 0;
+}
+
+.unitOne ol,
+.unitOne ul {
+	padding: 0 20px;
+}
+
+.unitOne__leftSection {
+	border-right: solid #cbcbcb 1px;
+	overflow-y: scroll;
+	max-height: 100vh;
+}
+
+.unitOne__leftSection h1 {
+	color: black;
+	font-size: 3em;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.smallHeaderText {
+	font-size: 0.5em;
+	color: #b9b9b9;
+}
+
+.unitOne__leftSection h2 {
+	color: black;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.contLessonButton {
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.unitOne__centerSection {
+	height: 100vh;
+	background-color: #e1e1e1;
+}
