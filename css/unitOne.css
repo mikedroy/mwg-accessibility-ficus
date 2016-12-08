@@ -22,6 +22,11 @@ body text: #474a4a*/
 .unitOne {
 }
 
+.unitOne__leftSection ol,
+.unitOne__leftSection ul {
+	padding: 0 20px;
+}
+
 .unitOne__leftSection {
 	overflow-y: scroll;
 	max-height: 100vh;

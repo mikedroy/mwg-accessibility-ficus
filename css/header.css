@@ -30,18 +30,25 @@ svg.searchIcon {
 }
 
 nav#wpjs-topNav {
-    margin-left: 370px;
+    margin-left: 170px;
 }
 
 .desktopNav__subMenu {
     transition: height 500ms;
     background-color: rgb(227, 227, 227);
-    bottom: 0px;
+    top: 21px;
+    position: absolute;
     width: 200px;
+    padding:0px;
     padding-left:10px;
     background:#FFF;
-    border:1px solid #3bc84c;
+    border:1px solid #2341b0;
     border-radius:5px;
+}
+
+.hiddenPush {
+    position:absolute;
+    left:-10000px;
 }
 
 .subNav__item {
@@ -55,9 +62,14 @@ html body .subNav__item a {
     color: #000 !important;
 }
 
+img.logoWrap__image.wpjs-logo {
+    width: 150px;
+    margin-top: 20px;
+}
+
 .flyOutMenu {
     position: absolute;
-    left:200px;
+    left:188px;
     top:0px;
     width:200px;
     background:rgb(227, 227, 227);
@@ -66,7 +78,7 @@ html body .subNav__item a {
 .subNav__item:hover .flyOutMenu {
     display: block !important;
     position: absolute;
-    left:200px;
+    left:188px;
     top:0px;
     width:200px;
     background:rgb(227, 227, 227);
@@ -78,15 +90,17 @@ html body .subNav__item a {
     text-transform: uppercase;
     transition: color 500ms ease;
     cursor: pointer;
+    font-family: Helvetica;
+    color: #757575;
 
 }
 
 .desktopNav__navItem:hover > a {
-    color:#3bc84c !important;
+    color:#2341b0 !important;
 }
 
 .desktopNav__navItem:hover {
-    border:1px solid #3bc84c;
+    border:1px solid #2341b0;
     border-radius:5px;
 }
 
@@ -120,10 +134,10 @@ html body .subNav__item a {
 .flyOutMenu ul {
     padding-left: 10px;
     background:#FFF;
-    border:1px solid #3bc84c;
+    border:1px solid #2341b0;
     border-radius:5px;
 }
 
 html body li.subNav__item:hover > a {
-    color: #3bc84c !important;
+    color: #2341b0 !important;
 }
