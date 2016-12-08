@@ -59,6 +59,10 @@ var actionHandler = function() {
     generateView(null, "partials/rightSide/gridVisible.html", "gridCodeSample", function() { $mainButton.html('Continue Lesson'); })
     return;
   }
+  if (currentPlace === "gridCodeSample") {
+    generateView(null, "partials/rightSide/gridCodeSample.html", "gridCodeSample", function() { $mainButton.html('Continue Lesson'); })
+    return;
+  }
 }
 
 $mainButton.click(actionHandler);
