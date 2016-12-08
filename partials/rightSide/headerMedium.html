@@ -46,6 +46,14 @@
             });
 
 
+            jQuery('.flyOutMenu a').each(function() {
+
+                jQuery(this).on('click', function() {
+                    alert('You are beening redirected to the ' + jQuery(this).text() + " section!");
+                })
+
+            })
+
 
             jQuery('.subNav__item.hasFlyOut').each(function() {
 
