@@ -32,19 +32,15 @@ var actionHandler = function() {
 	     return;
 	}
 	if (currentPlace === "badHeaderCode") {
-		 generateView(null, "partials/rightSide/headerMedium.html", "mediumHeaderCode", function() { $mainButton.html('Continue Lesson'); })
+		 generateView("partials/leftSide/unitOneMedium.html", "partials/rightSide/headerMedium.html", "mediumHeaderCode", function() { $mainButton.html('Continue Lesson'); })
 	     return;
 	}
 	if (currentPlace === "mediumHeaderCode") {
-		generateView(null, "partials/rightSide/headerGood.html", "goodHeaderCode", function() { $mainButton.html('Continue Lesson'); })
+		generateView("partials/leftSide/unitOneGood.html", "partials/rightSide/headerGood.html", "goodHeaderCode", function() { $mainButton.html('Continue Lesson'); })
 		return;
 	}
 	if (currentPlace === "goodHeaderCode") {
-		generateView(null, "partials/rightSide/visibleHeader.html", "headerCodeSample", function() { $mainButton.html('Continue Lesson'); })
-		return;
-	}
-	if (currentPlace === "headerCodeSample") {
-		generateView(null, "partials/rightSide/headerSampleCode.html", "gridStart", function() { $mainButton.html('Continue Lesson'); })
+		generateView(null, "partials/rightSide/headerSampleCode.html", "headerCodeSample", function() { $mainButton.html('Continue Lesson'); })
 		return;
 	}
 	if (currentPlace === "gridStart") {
