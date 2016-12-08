@@ -28,19 +28,19 @@ var actionHandler = function() {
 	     return;
 	}
 	if (currentPlace === "headerLessonStart") {
-		 generateView(null, "partials/rightSide/headerBad.html", "badCode", function() { $mainButton.html('Continue Lesson'); })
+		 generateView(null, "partials/rightSide/headerBad.html", "badHeaderCode", function() { $mainButton.html('Continue Lesson'); })
 	     return;
 	}
-	if (currentPlace === "badCode") {
-		 generateView(null, "partials/rightSide/headerMedium.html", "goodCode", function() { $mainButton.html('Continue Lesson'); })
+	if (currentPlace === "badHeaderCode") {
+		 generateView(null, "partials/rightSide/headerMedium.html", "mediumHeaderCode", function() { $mainButton.html('Continue Lesson'); })
 	     return;
 	}
-	if (currentPlace === "goodCode") {
-	generateView(null, "partials/rightSide/headerGood.html", "visibleModule", function() { $mainButton.html('Continue Lesson'); })
+	if (currentPlace === "mediumHeaderCode") {
+		generateView(null, "partials/rightSide/headerGood.html", "goodHeaderCode", function() { $mainButton.html('Continue Lesson'); })
 		return;
 	}
-	if (currentPlace === "visibleModule") {
-		codeSample();
+	if (currentPlace === "goodHeaderCode") {
+		generateView(null, "partials/rightSide/visibleHeader.html", "headerCodeSame", function() { $mainButton.html('Continue Lesson'); })
 		return;
 	}
 }
