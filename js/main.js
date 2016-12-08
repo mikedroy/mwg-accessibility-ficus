@@ -12,6 +12,7 @@ var generateView = function (leftContentAjaxUrl, rightcontentAjaxUrl, newCurrent
 	
 	if (rightcontentAjaxUrl) {
 		$.get( rightcontentAjaxUrl, function( data ) {
+			console.log(rightcontentAjaxUrl);
 	    	  $dynamicView.html(data);
 		});
 	}
@@ -23,19 +24,19 @@ var generateView = function (leftContentAjaxUrl, rightcontentAjaxUrl, newCurrent
 var actionHandler = function() {
 	console.log('current place', currentPlace);
 	if (currentPlace === "start") {
-	     generateView("partials/unitOne.html", null, "headerLessonStart", function() { $mainButton.html('Continue Lesson'); })
+	     generateView("partials/leftSide/unitOne.html", "partials/rightSide/prepHeaderLesson.html", "headerLessonStart", function() { $mainButton.html('Continue Lesson'); })
+	     return;
 	}
 	if (currentPlace === "headerLessonStart") {
-		badCode();
-		testFunction();
-		return;
+		 generateView(null, "partials/rightSide/headerBad.html", "badCode", function() { $mainButton.html('Continue Lesson'); })
+	     return;
 	}
 	if (currentPlace === "badCode") {
-		goodCode();
-		return;
+		 generateView(null, "partials/rightSide/headerMedium.html", "goodCode", function() { $mainButton.html('Continue Lesson'); })
+	     return;
 	}
 	if (currentPlace === "goodCode") {
-		visibleModule();
+	generateView(null, "partials/rightSide/headerGood.html", "visibleModule", function() { $mainButton.html('Continue Lesson'); })
 		return;
 	}
 	if (currentPlace === "visibleModule") {
