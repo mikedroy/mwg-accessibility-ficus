@@ -24,7 +24,7 @@ var generateView = function (leftContentAjaxUrl, rightcontentAjaxUrl, newCurrent
 var actionHandler = function() {
 	console.log('current place', currentPlace);
 	if (currentPlace === "start") {
-	     generateView("partials/leftSide/unitOneOverview.html", "partials/rightSide/getReadyUnitOne.html", "headerLessonStart", function() { $mainButton.html('Continue Lesson'); })
+	     generateView("partials/leftSide/unitOneOverview.html", "partials/rightSide/getReadyUnitOne.html", "headerLessonStart", function() { $mainButton.html('Begin Lesson'); })
 	     return;
 	}
 	if (currentPlace === "headerLessonStart") {
@@ -40,7 +40,7 @@ var actionHandler = function() {
 		return;
 	}
 	if (currentPlace === "goodHeaderCode") {
-		generateView(null, "partials/rightSide/headerSampleCode.html", "headerCodeSample", function() { $mainButton.html('Continue Lesson'); })
+		generateView(null, "partials/rightSide/headerSampleCode.html", "gridGood", function() { $mainButton.html('Continue Lesson'); })
 		return;
 	}
 	if (currentPlace === "gridStart") {
