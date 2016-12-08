@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/unitOne.css">
   <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/cover.css">
   <link rel="stylesheet" id="theme-css" href="./css/header.css" type="text/css" media="all">
 </head>
@@ -20,8 +21,8 @@
 	<div class="container unitOne">
 	<div class="row">
 		<div class="col-sm-4 leftSection unitOne__leftSection">
+			<div class="logo"><span>Now You See It</span></div>
 			<div class="leftSection__content">
-			    <div class="logo"><span>Now You See It</span></div>
 			<h1>Welcome</h1>
 			<p>This project provides developers and others interested in accessible web development with an informative and hands-on lesson about the challenges that exist for visually impaired users. It also provides useful feedback on inclusive web page design. </p>
 			<!--p>The following is a tutorial that utilizes screen reader technology and an invisible interface to simulate the experience of visually impaired users navigating both accessible and inaccessible websites. </p-->
@@ -44,7 +45,7 @@
 					Stop Reading
 				</div>
 				<div class="command">
-					<span class="shortcut">➙</span><br />
+					<span class="shortcut">&rarr;</span><br />
 					Read (not-linked) text
 				</div>
 				<div class="command">
@@ -56,9 +57,9 @@
 					Forms List View
 				</div>
 			</div>
-			
+
 			<button class="mainActionButton button">Start</button>
-			<button class="helpButton help">Help</button>
+			<button class="helpButton button help" data-toggle="modal" data-target="#myModal">Help</button>
 
 
 		</div>
@@ -83,6 +84,26 @@
 		</div>
 	</div>
 	</div>
+	
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -90,7 +111,7 @@
     <script src="js/main.js"></script>
     <script src="js/unitOne.js"></script>
 
-   
+
 </body>
 
 </html>
