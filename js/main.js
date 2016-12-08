@@ -40,7 +40,7 @@ var actionHandler = function() {
 		return;
 	}
 	if (currentPlace === "goodHeaderCode") {
-		generateView(null, "partials/rightSide/headerSampleCode.html", "gridGood", function() { $mainButton.html('Continue Lesson'); })
+		generateView("partials/leftSide/headerOneWrapup.html", "partials/rightSide/headerSampleCode.html", "gridGood", function() { $mainButton.html('Begin Unit 2'); })
 		return;
 	}
 	if (currentPlace === "gridStart") {
