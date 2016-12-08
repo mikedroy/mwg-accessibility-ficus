@@ -44,7 +44,7 @@ var actionHandler = function() {
 		return;
 	}
 	if (currentPlace === "gridStart") {
-		generateView(null, "partials/rightSide/gridBad.html", "gridGood", function() { $mainButton.html('Continue Lesson'); })
+		generateView("partials/leftSide/gridOverview", "partials/rightSide/gridBad.html", "gridGood", function() { $mainButton.html('Continue Lesson'); })
 		return;
 	}
 	if (currentPlace === "gridGood") {
