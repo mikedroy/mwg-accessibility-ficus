@@ -1,15 +1,29 @@
 var $mainButton         = $('.mainActionButton'),
     $leftSideContent    = $('.leftSection__content'),
+    $dynamicView		= $('.dynamicView'),
     currentPlace        = 'start';
+
+var generateView = function (leftContentAjaxUrl, rightcontentAjaxUrl, newCurrentPlace, callback) {
+	if (leftContentAjaxUrl) {
+		$.get( leftContentAjaxUrl, function( data ) {
+	    	  $leftSideContent.html( data );
+		});
+	}
+	
+	if (rightcontentAjaxUrl) {
+		$.get( rightcontentAjaxUrl, function( data ) {
+	    	  $dynamicView.html(data);
+		});
+	}
+	
+	currentPlace = newCurrentPlace;
+	callback();
+}
 
 var actionHandler = function() {
 	console.log('current place', currentPlace);
 	if (currentPlace === "start") {
-	     $.get( "partials/unitOne.html", function( data ) {
-    	  $leftSideContent.html( data );
-    	  $mainButton.html('Continue Lesson');
-    	  currentPlace = "headerLessonStart";
-	});
+	     generateView("partials/unitOne.html", null, "headerLessonStart", function() { $mainButton.html('Continue Lesson'); })
 	}
 	if (currentPlace === "headerLessonStart") {
 		badCode();
