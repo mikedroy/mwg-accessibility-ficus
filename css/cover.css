@@ -62,7 +62,7 @@ a,.faux-link{
 	font-weight:bold;
 }
 
-a.button{
+.button{
 	display:block;
 	text-align:center;
 	width:100%;
@@ -80,11 +80,11 @@ a.button{
 
 }
 
-a.button-medium{
+.button-medium{
 	max-width:300px;
 }
 
-a.button:hover,a.button:focus{
+.button:hover,.button:focus{
 	box-shadow:0 2px 5px rgba(0,0,0,.3);
 	text-decoration:underline;
 	outline-color:#2341b0;
