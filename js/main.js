@@ -40,7 +40,19 @@ var actionHandler = function() {
 		return;
 	}
 	if (currentPlace === "goodHeaderCode") {
-		generateView(null, "partials/rightSide/visibleHeader.html", "headerCodeSame", function() { $mainButton.html('Continue Lesson'); })
+		generateView(null, "partials/rightSide/visibleHeader.html", "headerCodeSample", function() { $mainButton.html('Continue Lesson'); })
+		return;
+	}
+	if (currentPlace === "headerCodeSample") {
+		generateView(null, "partials/rightSide/headerSampleCode.html", "gridStart", function() { $mainButton.html('Continue Lesson'); })
+		return;
+	}
+	if (currentPlace === "gridStart") {
+		generateView(null, "partials/rightSide/gridBad.html", "gridGood", function() { $mainButton.html('Continue Lesson'); })
+		return;
+	}
+	if (currentPlace === "gridGood") {
+		generateView(null, "partials/rightSide/gridGood.html", "gridVisible", function() { $mainButton.html('Continue Lesson'); })
 		return;
 	}
 }
