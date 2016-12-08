@@ -1,3 +1,10 @@
+.header {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0 1em;
+    box-shadow: 0 5px 5px rgba(0,0,0,.08);
+}
+
 svg.downChevronIcon {
     width: 10px;
 }
@@ -25,8 +32,12 @@ svg.searchIcon {
     background-color: transparent;
     display: inline-block;
     vertical-align: top;
-    padding: 20px;
-    margin-right: 10px;
+    padding:2em .7em;
+    margin-right: 1em;
+}
+
+.desktopNav_subMenu a{
+    text-transform:none;
 }
 
 nav#wpjs-topNav {
@@ -35,15 +46,14 @@ nav#wpjs-topNav {
 
 .desktopNav__subMenu {
     transition: height 500ms;
-    background-color: rgb(227, 227, 227);
+    background-color: #f3f3f3;
     top: 21px;
     position: absolute;
     width: 200px;
-    padding:0px;
-    padding-left:10px;
-    background:#FFF;
-    border:1px solid #2341b0;
-    border-radius:5px;
+    padding: 0px;
+    padding-left: 1.5em;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 5px 5px rgba(0,0,0,.08);
 }
 
 .hiddenPush {
@@ -78,14 +88,14 @@ img.logoWrap__image.wpjs-logo {
 .subNav__item:hover .flyOutMenu {
     display: block !important;
     position: absolute;
-    left:188px;
-    top:0px;
-    width:200px;
-    background:rgb(227, 227, 227);
+    left: 179px;
+    top: 0px;
+    width: 200px;
+    background: rgb(227, 227, 227);
 }
 
 .desktopNav__navItem a {
-    font-size: 18px;
+    font-size: 1.5em;
     text-decoration: none;
     text-transform: uppercase;
     transition: color 500ms ease;
@@ -100,8 +110,7 @@ img.logoWrap__image.wpjs-logo {
 }
 
 .desktopNav__navItem:hover {
-    border:1px solid #2341b0;
-    border-radius:5px;
+    padding: 3em .7em 1em .7em;
 }
 
 
@@ -132,10 +141,10 @@ img.logoWrap__image.wpjs-logo {
 }
 
 .flyOutMenu ul {
-    padding-left: 10px;
-    background:#FFF;
-    border:1px solid #2341b0;
-    border-radius:5px;
+    padding-left: 1.5em;
+    background: #eaeaea;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0 5px 5px rgba(0,0,0,.08);
 }
 
 html body li.subNav__item:hover > a {
