@@ -110,24 +110,25 @@
 
 
     </script>
-    
-    <h1>Getting Better.</h1>
-    <p>We've improved our invisible header, but it's still not fully accessible yet.</p>
-    <p>Using your screen reader and keyboard, attempt to:</p>
-    <ol>
-        <li>Determine what types of products this fictional store sells</li>
-        <li>Find a Item inside a Item Group</li>
-    </ol>
-    <p>When you're ready to move on, click "continue lesson" to move on to phase 3.</p>
-    <p>Some improvements have been made from the previous version.</p>
-    <ul>
-        <li>Anchor tags have HREF attributes added to be defined as links</li>
-        <li>TabIndex attributes have been added to items</li>
-    </ul>
-    <p>
-        When finished, press the button below to show the header.
-    </p>
-    <button class="button" id="showHeader">Show Header</button>
+    <div aria-hidden="true">
+        <h1 aria-hidden="true">Getting Better.</h1>
+        <p aria-hidden="true">We've improved our invisible header, but it's still not fully accessible yet.</p>
+        <p aria-hidden="true">Using your screen reader and keyboard, attempt to:</p>
+        <ol aria-hidden="true">
+            <li aria-hidden="true">Determine what types of products this fictional store sells</li>
+            <li aria-hidden="true">Find a Item inside a Item Group</li>
+        </ol>
+        <p aria-hidden="true">When you're ready to move on, click "continue lesson" to move on to phase 3.</p>
+        <p aria-hidden="true">Some improvements have been made from the previous version.</p>
+        <ul>
+            <li aria-hidden="true">Anchor tags have HREF attributes added to be defined as links</li>
+            <li aria-hidden="true">TabIndex attributes have been added to items</li>
+        </ul>
+        <p aria-hidden="true">
+            When finished, press the button below to show the header.
+        </p>
+        <button aria-hidden="true" class="button" id="showHeader">Show Header</button>
+    </div>
     <script>
         jQuery('#showHeader').on('click', function() {
             jQuery('.desktopHeader').removeClass('hiddenPush');
