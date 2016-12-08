@@ -93,6 +93,9 @@ html body .subNav__item a {
 
 .desktopNav__navItemHasSubMenu > span {
      display: none;
+    position: absolute;
+    left: 0px;
+    top: 46px;
  }
 
 .desktopNav__navItemHasSubMenu:hover > span {

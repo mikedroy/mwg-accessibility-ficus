@@ -5,6 +5,12 @@
             integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
             crossorigin="anonymous"></script>
 
+    <script>
+
+    </script>
+
+
+
     <link rel="stylesheet" id="theme-css" href="./css/header.css" type="text/css" media="all">
 </head>
 <body>
@@ -22,7 +28,29 @@
 
                 </span>
                 <span id="Shop-hasSubNav" class="desktopNav__navItem desktopNav__navItemHasSubMenu">
-                    <a class="" style="color: inherit;">Shop</a>
+                    <a class="" href="#" style="color: inherit;">Shop</a>
+                    <script>
+                        jQuery('#Shop-hasSubNav.desktopNav__navItemHasSubMenu').on('keydown', function(e) {
+
+                            var parentSpan = jQuery(this).find('.desktopNav__subMenu').parent();
+
+                            if (parentSpan.hasClass('opened')) {
+                                if (e.which == 13 || e.keyCode == 13) {
+                                    e.preventDefault();
+                                    parentSpan.hide();
+                                    parentSpan.removeClass('opened');
+                                }
+                            } else {
+                                if (e.which == 13 || e.keyCode == 13) {
+                                    e.preventDefault();
+                                    parentSpan.show();
+                                    parentSpan.addClass('opened');
+                                }
+                            }
+
+
+                        });
+                    </script>
                     <span>
 
                         <ul id="ShopsubNavId" class="desktopNav__subMenu"><div
@@ -83,8 +111,8 @@
 
                     </span>
                 </span>
-                <span id="Discover-hasSubNav" class="desktopNav__navItem desktopNav__navItemHasSubMenu">
-                    <a class="" style="color: inherit;">Discover</a>
+                <span role="link" id="Discover-hasSubNav" class="desktopNav__navItem desktopNav__navItemHasSubMenu">
+                    <a class="" href="#" style="color: inherit;">Discover</a>
                     <span>
 
                         <ul id="DiscoversubNavId" class="desktopNav__subMenu">
@@ -92,12 +120,12 @@
                                 <li class="subNav__item" id="Sample-Page-noSubNav">
                                     <a>Our Community</a>
                                 </li>
-                            <li class="subNav__item" id="home-Page-noSubNav">
-                                <a>About Us</a>
-                            </li>
-                            <li class="subNav__item">
-                                <a>Custom Designs</a>
-                            </li>
+                                <li class="subNav__item" id="home-Page-noSubNav">
+                                    <a>About Us</a>
+                                </li>
+                                <li class="subNav__item">
+                                    <a>Custom Designs</a>
+                                </li>
                             </div>
                         </ul>
                     </span>
