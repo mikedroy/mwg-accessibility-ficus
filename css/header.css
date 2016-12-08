@@ -32,7 +32,7 @@ svg.searchIcon {
     background-color: transparent;
     display: inline-block;
     vertical-align: top;
-    padding:2em .7em;
+    padding:1.5em .7em;
     margin-right: 1em;
 }
 
@@ -47,11 +47,11 @@ nav#wpjs-topNav {
 .desktopNav__subMenu {
     transition: height 500ms;
     background-color: #f3f3f3;
-    top: 21px;
+    top:17px;
     position: absolute;
     width: 200px;
     padding: 0px;
-    padding-left: 1.5em;
+    padding-left: .7em;
     border-radius: 0 0 5px 5px;
     box-shadow: 0 5px 5px rgba(0,0,0,.08);
 }
@@ -88,14 +88,14 @@ img.logoWrap__image.wpjs-logo {
 .subNav__item:hover .flyOutMenu {
     display: block !important;
     position: absolute;
-    left: 179px;
+    left: 190px;
     top: 0px;
     width: 200px;
     background: rgb(227, 227, 227);
 }
 
 .desktopNav__navItem a {
-    font-size: 1.5em;
+    font-size: 1em;
     text-decoration: none;
     text-transform: uppercase;
     transition: color 500ms ease;
@@ -110,7 +110,7 @@ img.logoWrap__image.wpjs-logo {
 }
 
 .desktopNav__navItem:hover {
-    padding: 3em .7em 1em .7em;
+    padding: 2.25em .7em .75em .7em
 }
 
 
@@ -141,7 +141,7 @@ img.logoWrap__image.wpjs-logo {
 }
 
 .flyOutMenu ul {
-    padding-left: 1.5em;
+    padding-left: .7em;
     background: #eaeaea;
     border-radius: 0 5px 5px 0;
     box-shadow: 0 5px 5px rgba(0,0,0,.08);
