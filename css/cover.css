@@ -72,15 +72,20 @@ a,
 
 .button{
 	display:block;
-	text-align:center;
 	width:100%;
+	margin:1em 0;
+}
+
+.button,
+.btn
+{
+	text-align:center;
 	background:#2341b0;
 	border:0;
 	font-weight:bold;
 	color:#fff;
 	text-decoration:none;
 	padding:1em;
-	margin:1em 0;
 	border-radius:3px;
 	box-shadow:0 0px 0px rgba(0,0,0,.3);
 	transition: box-shadow .2s ease-in-out;
@@ -94,17 +99,36 @@ a,
 
 
 .button:hover,
-.button:focus{
+.button:focus,
+.btn:hover,
+.btn:focus{
+	background:#2341b0;
 	box-shadow:0 2px 5px rgba(0,0,0,.3);
 	text-decoration:underline;
 	outline-color:#2341b0;
 	color:#fff;
 }
 
+.modal-footer .btn+.btn{
+	margin-left:0;
+}
+
+.help{
+	text-align:center;
+}
+
 .helpButton{
 	text-transform:uppercase;
-	text-align:center;
-	margin:0 auto 1em auto;
+	margin-bottom:1em;
+	background:none;
+	color:#2341b0;
+	border:0;
+	font-weight:bold;
+	font-size:1.2em;
+}
+
+.helpButton:hover{
+	text-decoration:underline;
 }
 
 .command{
