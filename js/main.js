@@ -24,11 +24,11 @@ var generateView = function (leftContentAjaxUrl, rightcontentAjaxUrl, newCurrent
 var actionHandler = function() {
 	console.log('current place', currentPlace);
 	if (currentPlace === "start") {
-	     generateView("partials/leftSide/unitOne.html", "partials/rightSide/getReadyUnitOne.html", "headerLessonStart", function() { $mainButton.html('Continue Lesson'); })
+	     generateView("partials/leftSide/unitOneOverview.html", "partials/rightSide/getReadyUnitOne.html", "headerLessonStart", function() { $mainButton.html('Continue Lesson'); })
 	     return;
 	}
 	if (currentPlace === "headerLessonStart") {
-		 generateView(null, "partials/rightSide/headerBad.html", "badHeaderCode", function() { $mainButton.html('Continue Lesson'); })
+		 generateView("partials/leftSide/unitOneBad.html", "partials/rightSide/headerBad.html", "badHeaderCode", function() { $mainButton.html('Continue Lesson'); })
 	     return;
 	}
 	if (currentPlace === "badHeaderCode") {
