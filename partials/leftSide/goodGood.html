@@ -1,0 +1,27 @@
+
+<h1><span class="smallHeaderText">Unit 2:</span></br> Product Grid</h1>
+<h2>Improvements made</h2>
+
+Now that we've fixed our accessibility problems, use your screen reader and keyboard to:
+<ol>
+    <li>Try to add cheese.</li>
+    <li>Determine how many items there are.</li>
+</ol>
+
+By using a list for the products, screen readers will typically state the number of items in the list. In order to improve the experience we:
+<ol>
+    <li>Added alt text to images. Now the images can be read by the screen reader indicating what this image is.</li>
+    <li>Added an aria-label to the Add buttons. This gives people using screen readers more information about what this button will actually do.</li>
+</ol>
+<br />
+When finished, press the button below to show the product grid.
+
+<button aria-hidden="true" class="button" id="showHeader">Show Grid</button>
+<script>
+    jQuery('#showHeader').on('click', function() {
+        jQuery('.hiddenView').removeClass('hiddenView');
+    })
+</script>
+
+<br /><br />
+Now that you know what the product grid looks like, take a look at the code implemented to make the navigation more inclusive.

@@ -40,23 +40,27 @@ var actionHandler = function() {
 		return;
 	}
 	if (currentPlace === "goodHeaderCode") {
-		generateView("partials/leftSide/headerOneWrapup.html", "partials/rightSide/headerSampleCode.html", "gridGood", function() { $mainButton.html('Begin Unit 2'); })
+		generateView("partials/leftSide/headerOneWrapup.html", "partials/rightSide/headerSampleCode.html", "gridStart", function() { $mainButton.html('Begin Unit 2'); })
 		return;
 	}
 	if (currentPlace === "gridStart") {
-		generateView("partials/leftSide/gridOverview.html", "partials/rightSide/gridBad.html", "gridGood", function() { $mainButton.html('Continue Lesson'); })
+		generateView("partials/leftSide/gridOverview.html", "partials/rightSide/gridBad.html", "gridBad", function() { $mainButton.html('Continue Lesson'); })
+		return;
+	}
+	if (currentPlace === "gridBad") {
+		generateView("partials/leftSide/gridBad.html", "partials/rightSide/gridBad.html", "gridGood", function() { $mainButton.html('Continue Lesson'); })
 		return;
 	}
 	if (currentPlace === "gridGood") {
-		generateView("partials/leftSide/gridBad.html", "partials/rightSide/gridGood.html", "gridVisible", function() { $mainButton.html('Continue Lesson'); })
+		generateView("partials/leftSide/goodGood.html", "partials/rightSide/gridGood.html", "gridCodeSample", function() { $mainButton.html('Continue Lesson'); })
 		return;
 	}
-  if (currentPlace === "gridVisible") {
+/*  if (currentPlace === "gridVisible") {
     generateView("partials/leftSide/goodGood.html", "partials/rightSide/gridVisible.html", "gridCodeSample", function() { $mainButton.html('Continue Lesson'); })
     return;
-  }
+  }*/
   if (currentPlace === "gridCodeSample") {
-    generateView(null, "partials/rightSide/gridCodeSample.html", "gridCodeSample", function() { $mainButton.html('Continue Lesson'); })
+    generateView("partials/leftSide/unitTwoWrapup.html", "partials/rightSide/gridCodeSample.html", "start", function() { $mainButton.html('Back to Beginning'); })
     return;
   }
 }
