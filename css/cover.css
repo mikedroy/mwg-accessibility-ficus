@@ -5,15 +5,14 @@ body{
 	background-color:#e1e1e1;
 	font-family:"helvetica",arial,sans-serif,;
 }
-.sidebar{
+.leftSection{
 	background-color:#fff;
 	min-height:100vh;
 	padding:0 4%;
 }
 
-.content{
-	padding: 0 4%;
-	margin-top:5.8em;
+.centerSection{
+	padding: 5.8em 4% 0 4%;
 }
 
 .logo{
@@ -32,7 +31,8 @@ body{
 	-webkit-text-fill-color: transparent;
 }
 
-h1,h2{
+h1,
+h2{
 	font-weight:bold;
 	color:#000;
 }
@@ -47,22 +47,31 @@ h2{
 	margin:2.5em 0 1em 0;
 }
 
-p,ol,ul{
+p,
+ol,
+ul{
 	color:#757575;
 	font-weight:300;
 	line-height:1.6em;
+}
+
+ol,
+ul{
+	padding:0 3em;
 }
 a{
 	cursor:pointer;
 	text-decoration:underline;
 }
 
-a,.faux-link{
+a,
+.faux-link{
 	color:#2341b0;
 	font-weight:bold;
 }
 
-.button{
+.button,
+button{
 	display:block;
 	text-align:center;
 	width:100%;
@@ -84,10 +93,15 @@ a,.faux-link{
 	max-width:300px;
 }
 
-.button:hover,.button:focus{
+
+.button:hover,
+.button:focus,
+button:hover,
+button:focus{
 	box-shadow:0 2px 5px rgba(0,0,0,.3);
 	text-decoration:underline;
 	outline-color:#2341b0;
+	color:#fff;
 }
 
 .help{
