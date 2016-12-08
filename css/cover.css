@@ -134,7 +134,7 @@ a,
 
 .command{
 	white-space:nowrap;
-	margin:2em 0;
+	margin:1em 0;
 	color:#929292;
 	font-weight:600;
 	text-align:center;
@@ -151,8 +151,9 @@ a,
 	border-radius:10px;
 }
 
-#showHeader{
+#showHeader,
+#showHeader:hover{
 	color:#2341b0;
 	background:transparent;
-	border-bottom:2px solid #2341b0;
+	box-shadow:none;
 }
