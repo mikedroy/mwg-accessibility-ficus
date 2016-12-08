@@ -117,7 +117,8 @@ a,
 	text-align:center;
 }
 
-.helpButton{
+.helpButton,
+#showHeader{
 	text-transform:uppercase;
 	margin-bottom:1em;
 	background:none;
@@ -148,4 +149,10 @@ a,
 	padding:1em 2em;
 	margin-bottom:.5em;
 	border-radius:10px;
+}
+
+#showHeader{
+	color:#2341b0;
+	background:transparent;
+	border-bottom:2px solid #2341b0;
 }
