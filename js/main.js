@@ -9,14 +9,14 @@ var generateView = function (leftContentAjaxUrl, rightcontentAjaxUrl, newCurrent
 	    	  $leftSideContent.html( data );
 		});
 	}
-	
+
 	if (rightcontentAjaxUrl) {
 		$.get( rightcontentAjaxUrl, function( data ) {
 			console.log(rightcontentAjaxUrl);
 	    	  $dynamicView.html(data);
 		});
 	}
-	
+
 	currentPlace = newCurrentPlace;
 	callback();
 }
@@ -55,6 +55,10 @@ var actionHandler = function() {
 		generateView(null, "partials/rightSide/gridGood.html", "gridVisible", function() { $mainButton.html('Continue Lesson'); })
 		return;
 	}
+  if (currentPlace === "gridVisible") {
+    generateView(null, "partials/rightSide/gridVisible.html", "gridCodeSample", function() { $mainButton.html('Continue Lesson'); })
+    return;
+  }
 }
 
 $mainButton.click(actionHandler);
