@@ -116,9 +116,23 @@
     <p>Using your screen reader and keyboard, attempt to:</p>
     <ol>
         <li>Determine what types of products this fictional store sells</li>
-        <li>Shop for pants</li>
+        <li>Find a Item inside a Item Group</li>
     </ol>
     <p>When you're ready to move on, click "continue lesson" to move on to phase 3.</p>
+    <p>Some improvements have been made from the previous version.</p>
+    <ul>
+        <li>Anchor tags have HREF attributes added to be defined as links</li>
+        <li>TabIndex attributes have been added to items</li>
+    </ul>
+    <p>
+        When finished, press the button below to show the header.
+    </p>
+    <button class="button" id="showHeader">Show Header</button>
+    <script>
+        jQuery('#showHeader').on('click', function() {
+            jQuery('.desktopHeader').removeClass('hiddenPush');
+        })
+    </script>
     
     <div class="header desktopHeader wpjs-header hiddenPush">
     <div class="headerContent">
@@ -141,7 +155,7 @@
                         <ul id="ShopsubNavId" class="desktopNav__subMenu"><div
                                 class="shop-menu subMenuInterior">
                             <li class="subNav__item hasFlyOut">
-                                <a href="#" tabindex="4">Tops</a>
+                                <a href="#" tabindex="4">Item Group</a>
                                 <span class="flyOutChevron">
                                     <svg class="downChevronIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 5" style="fill: rgb(111, 111, 111);">
                                         <path d="M1 0l3 3 3-3 1 1-4 4-4-4z" style="fill-rule: evenodd; opacity: 0.65;"></path>
@@ -150,19 +164,19 @@
                                 <div class="flyOutMenu" style="display: none;">
                                 <ul>
                                     <li class="subNav__item">
-                                        <a href="#" tabindex="5">Jackets</a>
+                                        <a href="#" tabindex="5">Item</a>
                                     </li>
                                     <li class="subNav__item">
-                                        <a href="#" tabindex="6">Vests</a>
+                                        <a href="#" tabindex="6">Item</a>
                                     </li>
                                     <li class="subNav__item">
-                                        <a href="#" tabindex="7">T-Shirts</a>
+                                        <a href="#" tabindex="7">Item</a>
                                     </li>
                                 </ul>
                                 </div>
                                                             </li>
                             <li class="subNav__item hasFlyOut">
-                                <a href="#" tabindex="8">Bottoms</a>
+                                <a href="#" tabindex="8">Item Group</a>
                                 <span class="flyOutChevron">
                             <svg class="downChevronIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 5" style="fill: rgb(111, 111, 111);">
                                 <path d="M1 0l3 3 3-3 1 1-4 4-4-4z" style="fill-rule: evenodd; opacity: 0.65;"></path>
@@ -171,20 +185,20 @@
                                 <div class="flyOutMenu" style="display: none;">
                                 <ul>
                                     <li class="subNav__item">
-                                        <a href="#" tabindex="9">Pants</a>
+                                        <a href="#" tabindex="9">Item</a>
                                     </li>
 
                                      <li class="subNav__item">
-                                        <a href="#" tabindex="10">Shorts</a>
+                                        <a href="#" tabindex="10">Item</a>
                                     </li>
                                 </ul>
                                 </div>
                             </li>
                             <li class="subNav__item">
-                                <a href="#" tabindex="11">Shoes</a>
+                                <a href="#" tabindex="11">Item</a>
                             </li>
                             <li class="subNav__item" id="What--What-noSubNav">
-                                <a href="#" tabindex="12">Accessories</a>
+                                <a href="#" tabindex="12">Item</a>
                             </li>
                         </div>
                         </ul>
@@ -203,13 +217,13 @@
                         <ul id="DiscoversubNavId" class="desktopNav__subMenu">
                             <div class="discover-menu subMenuInterior">
                                 <li class="subNav__item" id="Sample-Page-noSubNav">
-                                    <a href="#" tabindex="15">Our Community</a>
+                                    <a href="#" tabindex="15">Item</a>
                                 </li>
                                 <li class="subNav__item" id="home-Page-noSubNav">
-                                    <a href="#" tabindex="16">About Us</a>
+                                    <a href="#" tabindex="16">Item</a>
                                 </li>
                                 <li class="subNav__item">
-                                    <a href="#" tabindex="17">Custom Designs</a>
+                                    <a href="#" tabindex="17">Item</a>
                                 </li>
                             </div>
                         </ul>
