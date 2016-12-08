@@ -24,8 +24,8 @@ body text: #474a4a*/
 	padding: 10px 0;
 }
 
-.unitOne ol,
-.unitOne ul {
+.unitOne__leftSection ol,
+.unitOne__leftSection ul {
 	padding: 0 20px;
 }
 
