@@ -44,15 +44,15 @@ var actionHandler = function() {
 		return;
 	}
 	if (currentPlace === "gridStart") {
-		generateView("partials/leftSide/gridOverview", "partials/rightSide/gridBad.html", "gridGood", function() { $mainButton.html('Continue Lesson'); })
+		generateView("partials/leftSide/gridOverview.html", "partials/rightSide/gridBad.html", "gridGood", function() { $mainButton.html('Continue Lesson'); })
 		return;
 	}
 	if (currentPlace === "gridGood") {
-		generateView(null, "partials/rightSide/gridGood.html", "gridVisible", function() { $mainButton.html('Continue Lesson'); })
+		generateView("partials/leftSide/gridBad.html", "partials/rightSide/gridGood.html", "gridVisible", function() { $mainButton.html('Continue Lesson'); })
 		return;
 	}
   if (currentPlace === "gridVisible") {
-    generateView(null, "partials/rightSide/gridVisible.html", "gridCodeSample", function() { $mainButton.html('Continue Lesson'); })
+    generateView("partials/leftSide/goodGood.html", "partials/rightSide/gridVisible.html", "gridCodeSample", function() { $mainButton.html('Continue Lesson'); })
     return;
   }
   if (currentPlace === "gridCodeSample") {
