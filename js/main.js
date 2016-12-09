@@ -28,7 +28,7 @@ var actionHandler = function() {
 	     return;
 	}
 	if (currentPlace === "headerLessonStart") {
-		 generateView("partials/leftSide/unitOneBad.html", "partials/rightSide/headerBad.html", "badHeaderCode", function() { $mainButton.html('Continue Lesson'); $('.wpjs-header').focus()})
+		 generateView("partials/leftSide/unitOneBad.html", "partials/rightSide/headerBad.html", "badHeaderCode", function() { $mainButton.html('Continue Lesson'); $('.startSpan').focus()})
 	     return;
 	}
 	if (currentPlace === "badHeaderCode") {
